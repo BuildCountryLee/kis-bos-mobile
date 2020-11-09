@@ -1,0 +1,42 @@
+.button-default {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  color: #212121;
+}
+
+.button-primary {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #2386ee;
+}
+
+.border-bottom{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 12px);
+    height: 1px;
+    background-color: #E6E6E6;
+    transform: scaleY(0.5);
+  }
+}
+
+.common-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #fff;
+  div {
+    font-size: 16px;
+  }
+}
